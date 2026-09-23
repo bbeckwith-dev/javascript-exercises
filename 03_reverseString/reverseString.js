@@ -1,4 +1,14 @@
-const reverseString = function() {
+const reverseString = function(word) {
+
+const chars = word.split('');
+
+let rWord = '';
+
+for (i = 0; i < word.length; i++) {
+  rWord += chars.pop();
+}
+
+return rWord;
 
 };
 
